@@ -19,9 +19,6 @@
     align-items: flex-start;
 }
 
-#product-infos > *{
-    /* height: 50%; */
-}
 #product-description {
     font-weight: 700;
     align-items: flex-start;
