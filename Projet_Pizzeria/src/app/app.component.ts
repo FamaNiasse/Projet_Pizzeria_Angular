@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IProduct, PRODUCTS } from './mocks/products.mock';
 
 @Component({
   selector: 'app-root',
