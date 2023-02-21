@@ -18,6 +18,7 @@ import { CustomizeComponent } from './pages/customize/customize.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { RecapComponent } from './pages/recap/recap.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AppRoutingModule } from './app-routing.module';
     ProductsComponent,
     CustomizeComponent,
     CartComponent,
-    RecapComponent
+    RecapComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

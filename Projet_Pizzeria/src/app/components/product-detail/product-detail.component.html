@@ -1,10 +1,10 @@
 <div id="product" class="flex">
-    <img src="assets/images/pizzas/pizza-chicken.png" alt="pizza">
+    <img src="{{product.picture}}" alt="{{product.title}}">
     <div id="product-infos" class="flex column">
         <div id="product-description" class="flex column">
-            <h2>Nom du produit</h2>
-            <p class="price">7,00 €</p>
-            <p class="description">Description du produit</p>
+            <h2>{{product.title}}</h2>
+            <p class="price">{{price | number:'1.2'}} €</p>
+            <p class="description">{{product.description}}</p>
         </div>
         <div id="ingredients" class="flex column">
             <h3>Ingrédient inclus</h3>

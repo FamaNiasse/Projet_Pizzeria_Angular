@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IProduct } from 'src/app/mocks/products.mock';
 
 @Component({
   selector: 'app-product-detail',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent {
+  @Input() product!: IProduct;
+  price!: number;
 
+  ngOnInit(){
+    this.convertToDecimal();
+  }
+  convertToDecimal(){
+    
+    this.price = this.product.price/100; 
+  }
 }
