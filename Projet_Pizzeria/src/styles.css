@@ -52,3 +52,7 @@ button {
     cursor: pointer;
     color: white;
 }
+
+input {
+    border: none;
+}
